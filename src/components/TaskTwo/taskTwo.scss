@@ -1,0 +1,18 @@
+.task-two--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+@media (max-width: 820px) {
+  .task-two--container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 544px) {
+  .task-two--container {
+    flex-direction: column;
+  }
+}

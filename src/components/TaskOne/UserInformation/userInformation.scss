@@ -1,0 +1,40 @@
+.userInformation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #E8E9EB;
+  width: 380px;
+  padding: 28px 32px;
+  gap: 16px;
+  border-radius: 18px;
+  transition: 0.6s ease-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+
+  &__home {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  &__location--container {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 600; 
+    color: #555;
+  }
+  
+  &__timezone {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px; 
+  }
+  
+  &:hover {
+    transform: scale(1.02); 
+  }
+}
