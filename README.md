@@ -24,20 +24,16 @@ For the given task, we have the following features:
 - Modal windows to handle errors.
 
 IP Address Lookup:
-
 -Input field for users to enter an IP address with validation.
 -Error handling for API requests, displaying error messages when needed.
 -Display of IP address details, including Country, City, Latitude, Longitude, and Timezone.
 - Button to open the google maps by the Latitude and Longitude given
 
 Image to Text Conversion:
-
 -Input field for uploading images, allowing only PNG and JPEG formats.
 -Button to send a request to the API for image-to-text translation.
 -Display of the translated text in a user-friendly format.
 - Buttons to copy the text and to close a window
-
-## Getting Started
 
 ### Prerequisites
 
