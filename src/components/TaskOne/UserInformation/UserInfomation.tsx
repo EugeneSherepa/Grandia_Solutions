@@ -7,12 +7,27 @@ interface Props {
 };
 
 export const UserInformation: FC<Props> = ({ userInformation }) => {
+  const openGoogleMaps = () => {
+    if (userInformation?.lat && userInformation?.lon) {
+      const latitude = userInformation.lat;
+      const longitude = userInformation.lon;
+      const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}`;
+
+      window.open(googleMapsUrl, '_blank');
+    }
+  };
+
   return (
     <div className="userInformation">
       <h1 className="userInformation__home">{userInformation?.country},{userInformation?.city}</h1>
       <div className="userInformation__location--container">
-      <p><i className="fas fa-map-marker-alt"></i> Latitude: {userInformation?.lat}</p>
-  <p><i className="fas fa-map-marker-alt"></i> Longitude: {userInformation?.lon}</p>
+        <p>Latitude: {userInformation?.lat}</p>
+        <i 
+        className="fas fa-map-marker-alt userInformation__button"
+        onClick={openGoogleMaps}
+        >
+        </i>
+        <p> Longitude: {userInformation?.lon}</p>
       </div>
       <p className="userInformation__timezone">Timezone: {userInformation?.timezone}</p>
     </div>
