@@ -1,46 +1,63 @@
-# Getting Started with Create React App
+Use 'npm install' to install all the dependencies
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Grandia Solutions React Developer Screening
 
-## Available Scripts
+This project is a site with two different abilities: to get inpormation of the ip adress and to translate an image to the text. It was created as part of a test task for the Grandia Solutions Company.
 
-In the project directory, you can run:
+## Table of Contents
+- [Demo](#demo)
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+- [Usage](#usage)
+- [Styling with SASS](#styling-with-sass)
+- [Responsiveness](#responsiveness)
 
-### `npm start`
+## Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+You can view a live demo of the project [here](https://grandia-solutions-3p6u0dyqi-eugenesherepa.vercel.app/).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+Features
+For the given task, we have the following features:
+- Swith between first and second tasks.
+- Modal windows to handle errors.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+IP Address Lookup:
 
-### `npm run build`
+-Input field for users to enter an IP address with validation.
+-Error handling for API requests, displaying error messages when needed.
+-Display of IP address details, including Country, City, Latitude, Longitude, and Timezone.
+- Button to open the google maps by the Latitude and Longitude given
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Image to Text Conversion:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-Input field for uploading images, allowing only PNG and JPEG formats.
+-Button to send a request to the API for image-to-text translation.
+-Display of the translated text in a user-friendly format.
+- Buttons to copy the text and to close a window
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- A modern web browser to view the project.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Open the `index.html` file in your web browser to view the pricing comparison table. You can interact with the toggle to switch between first and second tasks.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Styling with SASS
 
-## Learn More
+The project uses SASS for styling and organization of the CSS code.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Responsiveness
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The pricing table is responsive and adapts to various screen sizes:
+- On mobile, tables information vertically for easy readability.
+- On tablet, tables information vertically for easy readability.
+- On desktop, tables has a comfortable width, and all information is presented neatly.
+
+## Credits
+
+This project was created by Eugene Sherepa.
