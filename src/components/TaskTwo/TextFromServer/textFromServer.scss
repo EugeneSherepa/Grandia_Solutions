@@ -1,34 +1,33 @@
-.translated-text__container {
+.translated-text {
   background: #E8E9EB;
   width: 380px;
   padding: 28px 32px;
   border-radius: 18px;
   transition: 0.6s ease-out;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
 
-.translated-text__buttons {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 16px;
-}
+  &__buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
 
-.fa-solid {
-  font-size: 24px; 
-  margin-left: 10px;
-  cursor: pointer; 
-  color: #333; 
-  transition: color 0.3s ease-in-out; 
+    &--button {
+      font-size: 24px; 
+      margin-left: 10px;
+      cursor: pointer; 
+      color: #333; 
+      transition: color 0.3s ease-in-out; 
+    
+      &:hover {
+        color: #746D69; 
+      }
+    }
+  }
 
-  &:hover {
-    color: #746D69; 
+  &__text {
+    display: inline-block; 
+    margin-right: 8px; 
+    font-size: 16px; 
+    color: #333;
   }
 }
-
-span {
-  display: inline-block; 
-  margin-right: 8px; 
-  font-size: 16px; 
-  color: #333;
-}
-

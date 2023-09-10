@@ -21,16 +21,16 @@ export const InputBox: FC<Props> = ({
   }
   
   return (
-    <div className="search-box__container">
+    <div className="search-box">
       {isLoading && (
-        <div className="search-box__loader-backdrop">
+        <div className="search-box__loader">
           <Box sx={{ display: 'flex' }}>
             <CircularProgress color="inherit"/>
           </Box>
         </div>
       )}
       <form onSubmit={(event) => handleRequestToServer(event)}>
-        <div className="search-box">
+        <div className="search-box__container">
           <input 
             type="text" 
             placeholder="Enter The Ip Adress"
@@ -46,6 +46,5 @@ export const InputBox: FC<Props> = ({
         </div>
       </form> 
     </div>
-  )
-}
-
+  );
+};

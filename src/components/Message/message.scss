@@ -1,4 +1,4 @@
-.copy-message {
+.message__show {
   display: flex;
   background-color: #E8E9EB; 
   padding: 10px 20px; 
@@ -8,18 +8,18 @@
   right: 20px; 
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
-}
 
-.show--success {
-  background-color: lightgreen;
-  color: black;
-  transition: 0.5s;
-  opacity: 1; 
-}
-
-.show--error {
-  background-color: #DC3D36;
-  color: white;
-  transition: 0.5s;
-  opacity: 1; 
+  &--success {
+    background-color: lightgreen;
+    color: black;
+    transition: 0.5s;
+    opacity: 1; 
+  }
+  
+  &--error {
+    background-color: #DC3D36;
+    color: white;
+    transition: 0.5s;
+    opacity: 1; 
+  }
 }

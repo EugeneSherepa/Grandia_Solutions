@@ -23,8 +23,7 @@ export const TaskTwo: FC = () => {
         const formData = new FormData();
         formData.append('image', imageToServer);
 
-        client
-          .post('/imagetotext', formData)
+        client.post('/imagetotext', formData)
           .then((response) => {
             if (Array.isArray(response)) {
               const textResponses = response as TextResponse[];
@@ -44,7 +43,7 @@ export const TaskTwo: FC = () => {
     }
     else {
       setShowError(true);
-      setErrorMessage('Please, select a file firstly');
+      setErrorMessage('Please, select a file');
     }
   };
 
@@ -63,19 +62,19 @@ export const TaskTwo: FC = () => {
         isLoading={isLoading}
       />
       {(text?.length ?? 0) > 0 && (
-        <TextFromServer  
+        <TextFromServer 
           text={text}
           setImage={setImage}
           setText={setText}
         />
       )}
 
-      {showError  && (
+      {showError && (
         <Message 
           message={errorMesaage}
           showError={showError}
         />
       )}
     </div>
-  )
-}
+  );
+};

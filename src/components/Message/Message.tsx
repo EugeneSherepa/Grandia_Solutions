@@ -11,9 +11,9 @@ interface CopyMessageProps {
 export const Message: FC<CopyMessageProps> = ({ message, showCopyMessage, showError }) => {
 
   return (
-    <div className={cn("copy-message", {
-      "show--success" : showCopyMessage,
-      "show--error" : showError 
+    <div className={cn("message__show", {
+      "message__show--success" : showCopyMessage,
+      "message__show--error" : showError ,
     })}>
       {message}
     </div>

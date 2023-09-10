@@ -25,8 +25,7 @@ export const UserInformation: FC<Props> = ({ userInformation }) => {
         <i 
         className="fas fa-map-marker-alt userInformation__button"
         onClick={openGoogleMaps}
-        >
-        </i>
+        />
         <p> Longitude: {userInformation?.lon}</p>
       </div>
       <p className="userInformation__timezone">Timezone: {userInformation?.timezone}</p>

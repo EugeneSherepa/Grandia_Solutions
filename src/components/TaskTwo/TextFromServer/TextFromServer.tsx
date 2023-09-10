@@ -46,20 +46,25 @@ export const TextFromServer: FC<Props> = ({ text, setImage, setText }) => {
   }, [text]);
 
   return (
-    <div className="translated-text__container">
-        {showCopyMessage && <Message message="Text copied!" showCopyMessage={showCopyMessage}/>}
+    <div className="translated-text">
+        {showCopyMessage && (
+           <Message 
+            message="Text copied!" 
+            showCopyMessage={showCopyMessage}
+           />
+        )}
+        
       <div className='translated-text__buttons'>
-        <i className="fa-solid fa-copy" 
+        <i className="fa-solid fa-copy translated-text__buttons--button" 
           onClick={handleCopy}
         />
-        <i className="fa-solid fa-square-xmark" 
+        <i className="fa-solid fa-square-xmark translated-text__buttons--button" 
           onClick={() => {
             handleClose(); 
             handleResetFileInput();
           }}
         />
       </div>
-
 
       <input
         type="text"
@@ -70,7 +75,10 @@ export const TextFromServer: FC<Props> = ({ text, setImage, setText }) => {
       />
 
       {text?.map(t => (
-      <span key={text.indexOf(t)}>
+      <span 
+        className="translated-text__text"
+        key={text.indexOf(t)}
+      >
         {`${t.text} `}
       </span>
       ))}

@@ -13,21 +13,21 @@ export const ToggleSwitch: FC<Props> = ({ setIsFirstTaskActive, isFirstTaskActiv
   };
 
   return (
-    <div className="toggle-switch">
-      <span className="task">Task 1</span>
+    <div className="toggle">
+      <span className="toggle__task">Task 1</span>
       <input 
-        className={cn('toggle-input', {
-          'toggle-input__active': !isFirstTaskActive
+        className={cn('toggle__input', {
+          'toggle__input--active': !isFirstTaskActive
         })}
         type="checkbox" 
         id="billingToggle"
         onChange={handleToggleChange}
         checked={!isFirstTaskActive} 
       />
-      <label htmlFor="billingToggle" className="switch">
-        <div className="ball"></div>
+      <label htmlFor="billingToggle" className="toggle__switch">
+        <div className="toggle__ball"></div>
       </label>
-      <span className="task">Task 2</span>
+      <span className="toggle__task">Task 2</span>
     </div>
   );
 };

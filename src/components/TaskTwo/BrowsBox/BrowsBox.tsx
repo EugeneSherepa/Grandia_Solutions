@@ -25,15 +25,15 @@ export const BrowsBox: FC<Props> = ({
   };
 
   return (
-    <div className="brows-box__container">
+    <div className="brows-box">
       {isLoading && (
-        <div className="brows-box__loader-backdrop">
+        <div className="brows-box__loader">
           <Box sx={{ display: 'flex' }}>
             <CircularProgress color="inherit"/>
           </Box>
         </div>
       )}
-      <div className="brows-box">
+      <div className="brows-box__container">
       <input
         type="file"
         className="brows-box__input"

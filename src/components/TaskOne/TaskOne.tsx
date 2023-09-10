@@ -56,6 +56,7 @@ export const TaskOne: FC = () => {
         handleRequestToServer={handleRequestToServer}
         isLoading={isLoading}
       />
+
       {userInformation !== null && (
         <UserInformation 
           userInformation={userInformation}
@@ -69,5 +70,5 @@ export const TaskOne: FC = () => {
         />
       )}
     </div>
-  )
-}
+  );
+};
