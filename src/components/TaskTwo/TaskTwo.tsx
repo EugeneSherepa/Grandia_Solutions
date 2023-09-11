@@ -2,7 +2,7 @@ import { FC, useState, useEffect, useRef } from 'react';
 import { BrowsBox } from './BrowsBox/BrowsBox';
 import { TextFromServer } from './TextFromServer/TextFromServer';
 import { client } from '../../utils/fetchClient';
-import { TextResponse } from '../../types/ResponseBody';
+import { TextResponse } from '../../types/TestResponse';
 import { Message } from '../Message/Message';
 
 import './taskTwo.scss'
@@ -28,8 +28,6 @@ export const TaskTwo: FC = () => {
             if (Array.isArray(response)) {
               const textResponses = response as TextResponse[];
               setText(textResponses);
-            } else {
-              console.error('Unexpected response format:', response);
             }
           })
           .catch((error) => {

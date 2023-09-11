@@ -17,10 +17,7 @@ function request<T>(
     options.body = data;
   }
 
-  console.log(options);
-
   return fetch(BASE_URL + url, options).then((response) => {
-    console.log(response)
     if (!response.ok) {
       return response.json().then((error) => {
         throw new Error(error.message);

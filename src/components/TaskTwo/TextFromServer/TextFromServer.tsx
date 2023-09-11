@@ -1,6 +1,6 @@
 import { FC, useState, useRef, useEffect } from 'react';
 import { Message } from '../../Message/Message';
-import { TextResponse } from '../../../types/ResponseBody';
+import { TextResponse } from '../../../types/TestResponse';
 import './textFromServer.scss';
 
 interface Props {
